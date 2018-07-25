@@ -1,0 +1,24 @@
+{
+  "name": "multibacter-backend",
+  "version": "1.0.0",
+  "description": "Backend do Projeto mobile",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanfonsecaaquino/multibacter-backend.git"
+  },
+  "author": "Jean Aquino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeanfonsecaaquino/multibacter-backend/issues"
+  },
+  "homepage": "https://github.com/jeanfonsecaaquino/multibacter-backend#readme",
+  "dependencies": {
+    "nodemon": "^1.18.3",
+    "restify": "^7.2.1"
+  }
+}
