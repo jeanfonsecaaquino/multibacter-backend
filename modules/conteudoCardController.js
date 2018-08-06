@@ -26,6 +26,15 @@ class CardContentController {
         next();
     }
 
+    validaQRCOde(req, res, next) {
+        if(req.params.qrCode==="qr_code_validado"){
+            res.send(200, {mensagem : "Qr Code Valido"});
+        }else{
+            res.send(500, {mensagem : "Codigo Invalido"});
+        }
+        next();
+    }
+
 }
 
 module.exports = new CardContentController();

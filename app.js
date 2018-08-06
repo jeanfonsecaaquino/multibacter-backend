@@ -8,7 +8,8 @@ function respond(req, res, next) {
 
 var server = restify.createServer();
 server.get('/', respond);
-server.get('/:tipoConteudo', conteudoCardController.retornarConteudo.bind(this))
+server.get('/qrcode/:qrCode', conteudoCardController.validaQRCOde.bind(this));
+server.get('/conteudo/:tipoConteudo', conteudoCardController.retornarConteudo.bind(this))
 
 server.listen(8080, function () {
     console.log('%s listening at %s', server.name, server.url);
